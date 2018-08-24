@@ -12,4 +12,13 @@ class UserController extends Controller
     	$user = User::first();
     	return json_encode($user);
     }
+
+    public function add_user()
+    {
+    	User::create([
+    		'name' => 'test',
+    		'email' => 'test1@gmail.com',
+    		'password' => bcrypt('password'),
+    	]);
+    }
 }
