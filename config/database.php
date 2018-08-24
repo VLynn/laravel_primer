@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => $db_config['connection'],
 
     /*
     |--------------------------------------------------------------------------
@@ -34,7 +34,6 @@ return [
     */
 
     'connections' => [
-        'default' => $db_config['connection'],
 
         'sqlite' => [
             'driver' => 'sqlite',
