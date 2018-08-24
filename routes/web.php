@@ -14,3 +14,5 @@
 Route::get('/', 'StaticPagesController@home');
 Route::get('/help', "StaticPagesController@help");
 Route::get('/about', "StaticPagesController@about");
+
+Route::get('/user/profile', 'UserController@get_user_profile');
